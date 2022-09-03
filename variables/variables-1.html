@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variables 1</title>
+</head>
+<body>
+<section>
+    <h3>Тест 1</h3>
+    <span>Знайти периметр трикутника. Формула P = a + b + c</span>
+    <ol>
+        <li>
+            a = 10, b = 20, c = 30.
+            <br>
+            Очікуваний результат: 60
+            <br>
+            <button onclick="alert('Результат: ' + test1(10, 20, 30))">Перевірити</button>
+        </li>
+        <li>
+            a = 5, b = 7, c = 13.
+            <br>
+            Очікуваний результат: 25
+            <br>
+            <button onclick="alert('Результат: ' + test1(5, 7, 13))">Перевірити</button>
+        </li>
+        <li>
+            Значення від користувача
+            <br>
+            <button onclick="alert('Результат: ' + test1(+prompt('a='), +prompt('b='), +prompt('c=')))">Спробувати</button>
+        </li>
+    </ol>
+    <script>
+        function test1(a, b, c) {
+            // код тут
+            return 0; // Результат тут
+        }
+    </script>
+</section>
+</body>
+</html>
