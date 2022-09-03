@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactions 1</title>
+</head>
+<body>
+<section>
+    <h3>Тест 1</h3>
+    <span>Логін форма</span>
+    <ol>
+        <li>
+            Попросити в користувача його імʼя
+            <br>
+            Очікуваний результат:
+            <ul>
+                <li>Відкриваємо вікно і запитуємо імʼя</li>
+                <li>Виводимо імʼя в наступному вікні</li>
+            </ul>
+            <br>
+            <button onclick="test1(); checkResults()">Перевірити</button>
+        </li>
+    </ol>
+    <script>
+      function test1() {
+        // Код тут
+      }
+    </script>
+
+    <!--  Далі живуть дракони. Не ходи туди  -->
+    <script>
+      function checkResults(){0===window.alertCount&&0===window.promptCount?alert("alert() \u0456 prompt() \u043D\u0435 \u0432\u0438\u043A\u043B\u0438\u043A\u0430\u043D\u0438\u0439"):0===window.promptCount?alert("prompt() \u043D\u0435 \u0432\u0438\u043A\u043B\u0438\u043A\u0430\u043D\u0438\u0439"):0===window.alertCount&&alert("alert() \u043D\u0435 \u0432\u0438\u043A\u043B\u0438\u043A\u0430\u043D\u0438\u0439"),window.alertCount=0,window.promptCount=0}window.alertCount=0,window.promptCount=0,window.realAlert=window.alert,window.realPrompt=window.prompt,window.alert=(...a)=>(window.alertCount++,window.realAlert(...a)),window.prompt=(...a)=>(window.promptCount++,window.realPrompt(...a))
+    </script>
+</section>
+</body>
+</html>
